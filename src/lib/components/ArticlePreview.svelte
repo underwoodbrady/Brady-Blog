@@ -8,7 +8,7 @@
 </script>
 
 <article class={"mb-4 hover:bg-white/10 p-4 rounded-md cursor-pointer group duration-150" + (dim ? " opacity-70" : " opacity-100")} on:mouseover={onMouseOver} on:focus={onMouseOver} on:mouseleave={onMouseLeave}>
-	<div class="flex items-center space-x-2 mb-3">
+	<div class="flex items-center space-x-2 mb-2">
 		<h3 class="">{title}</h3>
 		<Arrow class="text-light" />
 	</div>

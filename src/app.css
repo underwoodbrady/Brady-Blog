@@ -2,24 +2,163 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    font-family: "Inter", sans-serif;
+* {
+  font-family: "Inter", sans-serif;
 }
 
-body{
-    background-color: theme('colors.background');
-    overflow-x: hidden;
-    color:white;
+body {
+  overflow-x: hidden;
+  color: white;
+}
+
+::-moz-selection {
+  color: default;
+  background-color: rgb(255, 255, 255, 0.15);
+}
+
+::selection {
+  color: default;
+  background-color: rgb(255, 255, 255, 0.15);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(37, 37, 37);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(71, 71, 71);
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(87, 87, 87);
 }
 
 @layer base {
-    h1 {
-      @apply text-4xl font-bold text-neutral-100;
-    }
-    h2 {
-      @apply text-xl font-medium text-neutral-300;
-    }
-    h3{
-      @apply text-lg font-medium text-light;
-    }
+
+  :root,
+  .green {
+    --background: #344e41;
+
+    --background-hue: 159;
+    --background-saturation: 53%;
+    --background-lightness: 11%;
+
+    --primary: #588157;
+
+    --primary-hue: 153;
+    --primary-saturation: 29%;
+    --primary-lightness: 32%;
+
+    --secondary: #a3b18a;
+  
+    --secondary-hue: 152;
+    --secondary-saturation: 23%;
+    --secondary-lightness: 56%;
+
+    --light: #dad7cd;
+
+    --light-hue: 46;
+    --light-saturation: 15%;
+    --light-lightness: 83%;
   }
+  :root,
+  .lgreen {
+    --background: #344e41;
+
+    --background-hue: 150;
+    --background-saturation: 20%;
+    --background-lightness: 25%;
+
+    --primary: #588157;
+
+    --primary-hue: 119;
+    --primary-saturation: 19%;
+    --primary-lightness: 42%;
+
+    --secondary: #a3b18a;
+  
+    --secondary-hue: 82;
+    --secondary-saturation: 20%;
+    --secondary-lightness: 62%;
+
+    --light: #dad7cd;
+
+    --light-hue: 46;
+    --light-saturation: 15%;
+    --light-lightness: 83%;
+  }
+  :root,
+  .blue{
+    --background: #0d1b2a;
+
+    --background-hue: 211;
+    --background-saturation: 53%;
+    --background-lightness: 11%;
+
+    --primary: #415A77;
+
+    --primary-hue: 212;
+    --primary-saturation: 29%;
+    --primary-lightness: 36%;
+
+    --secondary: #778DA9;
+  
+    --secondary-hue: 214;
+    --secondary-saturation: 23%;
+    --secondary-lightness: 56%;
+
+    --light: #e0e1dd;
+
+    --light-hue: 75;
+    --light-saturation: 6%;
+    --light-lightness: 87%;
+
+  }
+  :root,
+  .purple{
+    --background: #1a1423;
+
+    --background-hue: 264;
+    --background-saturation: 27%;
+    --background-lightness: 12%;
+
+    --primary: #372549;
+
+    --primary-hue: 270;
+    --primary-saturation: 33%;
+    --primary-lightness: 22%;
+
+    --secondary: #774c60;
+  
+    --secondary-hue: 276;
+    --secondary-saturation: 23%;
+    --secondary-lightness: 56%;
+
+    --light: #eacdc2;
+
+    --light-hue: 347;
+    --light-saturation: 15%;
+    --light-lightness: 87%;
+  }
+
+  h1 {
+    @apply text-3xl lg:text-4xl font-bold text-neutral-100;
+  }
+
+  h2 {
+    @apply text-lg lg:text-xl font-medium text-neutral-300;
+  }
+
+  h3 {
+    @apply text-lg font-medium text-light;
+  }
+
+  h4 {
+    @apply text-xl lg:text-2xl font-medium text-light;
+  }
+}

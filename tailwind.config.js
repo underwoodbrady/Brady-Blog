@@ -19,9 +19,6 @@ const radialGradientPlugin = plugin(
   }
 )
 
-/**
- * utility class presets
- */
 function _presets() {
   const shapes = ['circle', 'ellipse'];
   const pos = {
@@ -43,18 +40,28 @@ function _presets() {
   return result;
 }
 
+const hslToColor = (h, s, l) => `hsl(var(--${h}) var(--${s}) var(--${l}))`;
+
+const withOpacity = (variableName) => {
+  return ({ opacityValue }) => {
+    if (opacityValue !== undefined) {
+      return `hsla(var(--${variableName}-hue) var(--${variableName}-saturation) var(--${variableName}-lightness) / ${opacityValue})`;
+    }
+    return hslToColor(`${variableName}-hue`, `${variableName}-saturation`, `${variableName}-lightness`);
+  };
+};
+
 
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    
     extend: {
       colors:{
-        background:'#344e41',
-        primary:'#588157',
-        secondary:'#a3b18a',
-        light:'#dad7cd',
+        background:withOpacity('background'),
+        primary:withOpacity('primary'),
+        secondary:withOpacity('secondary'),
+        light:withOpacity('light'),
       }
     },
   },
