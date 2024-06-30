@@ -13,7 +13,7 @@
 	}
 </script>
 
-<div class="mr-20">
+<div class="mr-20 flex-1">
 	<ArticlePreview
 		title="Scaling Laws Applied at Scale"
 		introduction="What can we learn from pushing scaling laws to their limits"
@@ -53,6 +53,6 @@
 	</p>
 </div>
 
-<section class="w-4">
+<section class="w-8">
 	<Timeline />
 </section>

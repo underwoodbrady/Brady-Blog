@@ -8,7 +8,7 @@
     let likeButtonText = ['Like','Liked'];
 </script>
 
-<article>
+<article class="pr-4">
 	<a href="/" class="flex items-center space-x-1 text-light mb-6 underline"
 		><Arrow width={16} height={16} />Back to blog</a
 	>
