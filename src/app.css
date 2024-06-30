@@ -91,6 +91,8 @@ body {
     --light-hue: 46;
     --light-saturation: 15%;
     --light-lightness: 83%;
+
+    --preview: rgb(163,176,163);
   }
   :root,
   .blue{
@@ -117,6 +119,9 @@ body {
     --light-hue: 75;
     --light-saturation: 6%;
     --light-lightness: 87%;
+
+    --preview: rgb(163,163,176);
+
 
   }
   :root,
@@ -145,6 +150,34 @@ body {
     --light-saturation: 15%;
     --light-lightness: 87%;
   }
+  :root,
+  .home{
+    --background: #1a1423;
+
+    --background-hue: 0;
+    --background-saturation: 0%;
+    --background-lightness: 9%;
+
+    --primary: #372549;
+
+    --primary-hue: 270;
+    --primary-saturation: 46%;
+    --primary-lightness: 36%;
+
+    --secondary: #774c60;
+  
+    --secondary-hue: 276;
+    --secondary-saturation: 23%;
+    --secondary-lightness: 56%;
+
+    --light: #eacdc2;
+
+    --light-hue: 347;
+    --light-saturation: 15%;
+    --light-lightness: 87%;
+
+    --preview: rgb(171,163,176);
+  }
 
   h1 {
     @apply text-3xl lg:text-4xl font-bold text-neutral-100;
@@ -159,6 +192,6 @@ body {
   }
 
   h4 {
-    @apply text-xl lg:text-2xl font-medium text-light;
+    @apply text-xl lg:text-2xl font-bold text-light;
   }
 }

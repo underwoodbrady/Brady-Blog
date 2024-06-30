@@ -62,6 +62,7 @@ export default {
         primary:withOpacity('primary'),
         secondary:withOpacity('secondary'),
         light:withOpacity('light'),
+        preview:'var(--preview)'
       }
     },
   },

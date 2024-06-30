@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ArticlePreview from '$lib/components/ArticlePreview.svelte';
-    import Timeline from '$lib/components/Timeline.svelte';
+	import Timeline from '$lib/components/Timeline.svelte';
 
 	let mousedOver = 0;
 
@@ -20,6 +20,8 @@
 		dim={mousedOver != 1 && mousedOver != 0}
 		onMouseOver={() => dimArticles(1)}
 		onMouseLeave={removeDim}
+		likes={2}
+		link="scaling"
 	/>
 	<ArticlePreview
 		title="A Case For Open Training Data"
@@ -27,6 +29,7 @@
 		dim={mousedOver != 2 && mousedOver != 0}
 		onMouseOver={() => dimArticles(2)}
 		onMouseLeave={removeDim}
+		likes={5}
 	/>
 	<ArticlePreview
 		title="React Native vs. Flutter"
@@ -34,6 +37,7 @@
 		dim={mousedOver != 3 && mousedOver != 0}
 		onMouseOver={() => dimArticles(3)}
 		onMouseLeave={removeDim}
+		likes={2}
 	/>
 	<ArticlePreview
 		title="Welcome to my Blog"
@@ -42,6 +46,11 @@
 		onMouseOver={() => dimArticles(4)}
 		onMouseLeave={removeDim}
 	/>
+	<p
+		class="text-sm text-neutral-100 opacity-70 hover:opacity-100 duration-150 transition-opacity text-center mt-8 cursor-pointer"
+	>
+		Show More
+	</p>
 </div>
 
 <section class="w-4">

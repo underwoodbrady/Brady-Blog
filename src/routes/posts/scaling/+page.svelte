@@ -15,28 +15,28 @@
 
 	<div class="mb-6 flex items-center justify-between">
 		<h4>Scaling Laws Applied At Scale</h4>
-		<p class="text-secondary">6/26/2024</p>
+		<p class="text-secondary">June 6th 2024</p>
 	</div>
 
 	<div class="space-y-4 mb-12">
-		<p class="text-neutral-300 leading-7">
+		<p class="text-preview leading-7">
 			There are two things from our announcement today I wanted to highlight. First, a key part of
 			our mission is to put very capable AI tools in the hands of people for free (or at a great
 			price). I am very proud that we’ve made the best model in the world available for free in
 			ChatGPT, without ads or anything like that.
 		</p>
-		<p class="text-neutral-300 leading-7">
+		<p class="text-preview leading-7">
 			Our initial conception when we started OpenAI was that we’d create AI and use it to create all
 			sorts of benefits for the world. Instead, it now looks like we’ll create AI and then other
 			people will use it to create all sorts of amazing things that we all benefit from.
 		</p>
-		<p class="text-neutral-300 leading-7">
+		<p class="text-preview leading-7">
 			We are a business and will find plenty of things to charge for, and that will help us provide
 			free, outstanding AI service to (hopefully) billions of people. Second, the new voice (and
 			video) mode is the best computer interface I’ve ever used. It feels like AI from the movies;
 			and it’s still a bit surprising to me that it’s real.
 		</p>
-		<p class="text-neutral-300 leading-7">
+		<p class="text-preview leading-7">
 			Getting to human-level response times and expressiveness turns out to be a big change. The
 			original ChatGPT showed a hint of what was possible with language interfaces; this new thing
 			feels viscerally different. It is fast, smart, fun, natural, and helpful. Talking to a
