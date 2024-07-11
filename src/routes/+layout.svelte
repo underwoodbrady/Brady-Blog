@@ -26,7 +26,7 @@
 		></div>
 		<div class="z-10 fixed top-0 left-0 w-screen h-screen bg-background/60"></div>
 		<main class="z-20 relative flex flex-col lg:flex-row w-full">
-			<section class="w-[278px] h-[400px] relative ">
+			<section class="w-[278px] h-[400px] relative">
 				<header class="mb-8">
 					<div class="flex items-center space-x-4 mb-3">
 						<h1>Brady's Blog</h1>
@@ -49,8 +49,7 @@
 							onClick={() => {
 								showEmailInput = false;
 							}}
-						>
-						</ImageButton>
+						></ImageButton>
 					{:else}
 						<ImageButton
 							title="Subscribe by Email"
@@ -60,9 +59,11 @@
 						>
 							<Gmail />
 						</ImageButton>
-						<ImageButton title="Follow @dev.brady">
-							<Insta />
-						</ImageButton>
+						<a href="https://www.instagram.com/dev.brady/" target="_blank" class="block">
+							<ImageButton title="Follow @dev.brady">
+								<Insta />
+							</ImageButton>
+						</a>
 					{/if}
 				</div>
 
